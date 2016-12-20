@@ -19,3 +19,17 @@ If you want to generate the reports in a custom directory use the following comm
 
 as an example to run the project in chrome use 
 **mvn clean verify -Ddriver=chrome  -Dserenity.outputDirectory=target/site/serenity/ReporteChrome**
+
+## IMPORTANT
+
+To have a succes execution of the project, in the system must be registered a pacient withd the following data:
+
+Nombre Ricardo
+Documento: 1013595642
+
+And a Doctor with the following data:
+
+Nombre Andres
+Documento 1016024776
+
+If one of this users are not registered the suite test execution will not be the expected. 
