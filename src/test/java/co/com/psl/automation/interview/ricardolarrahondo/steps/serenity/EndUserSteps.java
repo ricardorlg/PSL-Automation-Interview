@@ -33,7 +33,6 @@ public class EndUserSteps extends ScenarioSteps {
 
 	}
 
-	@Step
 	public void submits_form() {
 		appointmentPage.submit();
 
@@ -45,13 +44,15 @@ public class EndUserSteps extends ScenarioSteps {
 	}
 
 	public void does_not_type_his_document() {
-		appointmentPage.enterDoctortDocument(Messages.getString("realDoctorDocument"));
 		appointmentPage.enterDate(formatter.format(new Date()));
+
+		appointmentPage.enterDoctortDocument(Messages.getString("realDoctorDocument"));
 	}
 
 	public void does_not_type_his_doctor_document() {
-		appointmentPage.enterPacientDocument(Messages.getString("realPacientDocument"));
 		appointmentPage.enterDate(formatter.format(new Date()));
+
+		appointmentPage.enterPacientDocument(Messages.getString("realPacientDocument"));
 	}
 
 	public void chooses_the_current_date_as_an_appoiment_date() {

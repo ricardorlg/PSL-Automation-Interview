@@ -24,5 +24,5 @@ public class Pet {
 
 	public int getId() {
 		return id;
-	} 
+	}
 }
