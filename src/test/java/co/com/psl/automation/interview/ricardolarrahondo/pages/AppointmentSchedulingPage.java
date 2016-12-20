@@ -36,7 +36,6 @@ public class AppointmentSchedulingPage extends PageObject {
 		// If we are not in firefox, use actions to hide datePicker, do not
 		// change the logic to set the date, Marrionette driver is so bugged.
 		if (!(((WebDriverFacade) getDriver()).getDriverName().equalsIgnoreCase("firefox"))) {
-			System.out.println("entra");
 			Actions action = new Actions(getDriver());
 			action.moveToElement(noteField);
 			action.click().build().perform();
